@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <link rel="icon" type="image/svg+xml" href="/js_95_OlehKotynskyi/logo-favicon.svg" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Cart</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+   
+  <script type="module" crossorigin src="/js_95_OlehKotynskyi/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/js_95_OlehKotynskyi/assets/vendor-4b9aba64.js">
+  <link rel="modulepreload" crossorigin href="/js_95_OlehKotynskyi/assets/scroll-be1b8bba.js">
+  <link rel="stylesheet" href="/js_95_OlehKotynskyi/assets/vendor-b3ce9496.css">
+  <link rel="stylesheet" href="/js_95_OlehKotynskyi/assets/scroll-fb68266c.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class='header-section'>
+      <div class="header-body container">
+         <a href="./index.html" class="header-logo">
+            <span class="header-logo-svg-span icon-styles">
+               <svg width="16" height="16">
+                  <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-logo"></use>
+               </svg>
+            </span>
+            <svg class="header-logo-svg-text" width="118" height="20">
+               <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-food-boutique"></use>
+            </svg>
+         </a>
+         <nav class="header-menu">
+            <ul class="header-list">
+               <li>
+                  <a href="./index.html" class="header-link btn-styles">Home</a>
+               </li>
+               <li>
+                  <a href="./cart-page.html" class="header-link-basket">
+                     <span class="header-link-basket-svg icon-styles">
+                        <svg width="14" height="14">
+                           <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-basket"></use>
+                        </svg>
+                     </span>
+                     <span class="header-basket-card">Cart &lpar;<span class="header-basket-counter">0</span>&rpar;</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+</header>
+
+      <main>
+         <section class="cart-section-container">
+   <div class="container cart-body">
+      <div class="cart">
+         <a href="./cart-page.html" class="header-link-basket">
+            <span class="header-link-basket-svg icon-styles">
+               <svg width="18" height="18">
+                  <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-basket"></use>
+               </svg>
+            </span>
+         </a>
+         <h2 class="products-quantity-title cart-title"></h2>
+      </div>
+
+      <div class="cart-empty">
+         <img src="/js_95_OlehKotynskyi/assets/basket-x1-b858a5bd.png" alt="Empty basket" srcset="/js_95_OlehKotynskyi/assets/basket-x2-41f25fbc.png 2x" />
+         <h3 class="products-titel">Your basket is <span>empty...</span></h3>
+         <p>
+            Go to the main page to select your favorite products and add them to the
+            cart.
+         </p>
+      </div>
+
+      <div class="cart-desktop-wrapper">
+         <div class="del-all-wrapper">
+            <button class="del-all-btn" type="button">Delete all</button>
+            <svg width="16" height="16">
+               <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-closed"></use>
+            </svg>
+         </div>
+         <ul class="cart-container"></ul>
+
+         <div class="cart-checkout-container">
+            <h2 class="cart-title">Your order</h2>
+            <div class="cart-total-container">
+               <h2 class="products-total">Total</h2>
+               <p>Sum: <span class="products-total-price cart-title"></span></p>
+            </div>
+
+            <form class="form-checkout" id="formCheckoutEmail">
+               <input class="inputEmail" type="email" placeholder="Enter your email" autofocus name="user-email-subscribe" id="formCheckoutInput" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please enter a valid email address" required />
+
+               <button class="btnCheckout" type="submit">Checkout</button>
+            </form>
+         </div>
+      </div>
+   </div>
+</section>
+<div id="myModal" class="modal">
+   <div class="modal-content">
+      <span class="close">
+         <svg width="16" height="16">
+            <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-closed"></use>
+         </svg>
+      </span>
+
+      <div>
+         <img class="imgModal" width="140" src="https://ftp.goit.study/img/so-yummy/ingredients/640c2dd963a319ea671e3663.png" />
+         <h2 class="modalH">Order success</h2>
+         <p class="modalMessage">
+            Thank you for shopping at Food Boutique. Your order has been received
+            and is now being freshly prepared just for you! Get ready to indulge in
+            nourishing goodness, delivered right to your doorstep. We're thrilled to
+            be part of your journey to better health and happiness.
+         </p>
+      </div>
+   </div>
+</div>
+
+
+      </main>
+
+      <footer class="footer-section">
+   <div class="footer-container container">
+      <div class="footer-wrapper">
+         <a href="./index.html" class="footer-logo">
+            <span class="footer-logo-svg-span">
+               <svg width="16" height="16">
+                  <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-logo"></use>
+               </svg>
+            </span>
+            <svg class="footer-logo-svg-text" width="118" height="20">
+               <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-food-boutique"></use>
+            </svg>
+         </a>
+         <ul class="footer-social-list">
+            <li class="footer-social-item">
+               <a href="https://www.facebook.com/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook icon">
+                  <svg width="24" height="24">
+                     <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-facebook"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="footer-social-item">
+               <a href="https://www.instagram.com/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+                  <svg width="24" height="24">
+                     <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-instagram"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="footer-social-item">
+               <a href="https://www.youtube.com/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Youtube icon">
+                  <svg width="24" height="24">
+                     <use href="/js_95_OlehKotynskyi/assets/sprite-a8de2b94.svg#icon-youtube"></use>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer-wrapper-info">
+         <div class="footer-opis">
+            <h2 class="footer-opis-titel">
+               Discover the Variety of Flavors and Quality
+            </h2>
+            <div class="footer-opis-text">
+               <p>
+                  An online store where you will find fresh, natural and delicious
+                  products for a healthy life and unforgettable gastronomic
+                  adventures.
+               </p>
+            </div>
+         </div>
+         <div class="footer-form">
+            <form class="footer-contact-form" autocomplete="off" name="contact_form" id="formEmail">
+               <p class="footer-form-text">
+                  Subscribe and learn about new products!
+               </p>
+               <label for="formInput" class="footer-contact-label">
+                  <input class="footer-contact-input" type="email" name="contact-info" placeholder="Email" id="formInput" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+               </label>
+               <button class="footer-contact-btn" type="submit">Send</button>
+            </form>
+         </div>
+      </div>
+      <div class="footer-servise">
+         <p class="footer-servise-text">Food Boutique. All rights reserved.</p>
+         <div class="footer-servise-orivacy">
+            <span class="footer-servise-span">Privacy Policy</span>
+            &#47;
+            <a href="#" class="footer-servise-link">Terms of Service</a>
+         </div>
+      </div>
+   </div>
+</footer>
+
+   </div>
+   
+</body>
+
+</html>
